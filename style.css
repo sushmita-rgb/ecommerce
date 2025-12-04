@@ -1,4 +1,11 @@
 /* ---------------- HEADER ---------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
 
 #header {
     display: flex;
@@ -820,6 +827,10 @@ footer .col .app-buttons .img {
     align-items: flex-start;
     gap: 40px;
 }
+#contact-details iframe {
+  width: 100% !important;
+  height: 300px;
+}
 
 #contact-details .details {
     width: 45%;
@@ -1353,4 +1364,15 @@ footer .col .app-buttons .img {
         padding: 5px;
         font-size: 12px;
     }
+}
+@media (max-width: 480px) {
+  #contact-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #contact-details .details,
+  #contact-details .map {
+    width: 100%;
+  }
 }
